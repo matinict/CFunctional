@@ -13,6 +13,7 @@ main(void){
         for(i=0;i<n;++i){ printf("%d ",a[i]);}
     }
 
+
 //Output
 //Enter the size of array: 4
 //Enter the array elements: 3 7 9 2
