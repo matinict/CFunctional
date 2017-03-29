@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 main(void){
-    int n,r,sum,temp,min,max;
+    int n,remainder,sum,temp,min,max;
     printf("Enter the minimum range: ");scanf("%d",&min);
     printf("Enter the maximum range: ");scanf("%d",&max);
     printf("Palindrome numbers in given range are: ");
@@ -12,9 +12,9 @@ main(void){
     for(n=min;n<=max;n++){
         temp=n; sum=0;
         while(temp){
-            r=temp%10;
-            temp=temp/10;
-            sum=sum*10+r;
+            remainder=temp%10;
+            //temp=temp/10;
+            sum=sum*10+remainder;
         }
         if(n==sum){printf("%d ",n);}
     }
