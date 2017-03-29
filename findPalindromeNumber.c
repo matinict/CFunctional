@@ -13,7 +13,7 @@ main(void){
         temp=n; sum=0;
         while(temp){
             remainder=temp%10;
-            //temp=temp/10;
+            temp=temp/10;
             sum=sum*10+remainder;
         }
         if(n==sum){printf("%d ",n);}
